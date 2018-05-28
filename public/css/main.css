@@ -1,0 +1,101 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 44px;
+}
+
+ul, ol {
+  list-style: none;
+}
+.navbar{
+  background-color: #00a75e;
+  height: 57px;
+  margin-bottom: 30px;
+  
+}
+.navcontainer{
+  margin: 0 auto;
+  max-width: 112.0rem;
+  padding: 0 2.0rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+
+.logo{
+  height:50px;
+  
+}
+footer {
+  position: absolute;
+  width: 100%;
+  height: 44px;
+  bottom: 0;
+  padding: 0 30px;
+}
+
+label {
+  display: block;
+  line-height: 1.8;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+form button[type="submit"] {
+  margin-top: 1em;
+}
+
+.list-inline {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+.list-inline > li > a{
+  color:white;
+  /* padding: 0 5px; */
+  
+}
+
+.list-inline > li {
+  margin: 0 5px;
+  
+}
+
+
+
+.text-success {
+  color: #29b35b;
+}
+
+.text-danger {
+  color: #b61b17;
+}
+
+.text-info {
+  color: #31708f;
+}
+
+.avatar {
+  margin-right: 5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+input:-webkit-autofill {
+          box-shadow: 0 0 0 30px #e6fff2 inset;
+  -webkit-box-shadow: 0 0 0 30px #e6fff2 inset;
+}
