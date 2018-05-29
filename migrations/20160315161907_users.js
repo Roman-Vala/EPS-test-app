@@ -7,7 +7,7 @@ exports.up = function(knex, Promise) {
       table.string('password');
       table.string('passwordResetToken');
       table.dateTime('passwordResetExpires');           
-      table.text('devices');
+      table.string('devices');
       table.timestamps();
     })
   ]);
