@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="/css/main.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 </head>
-<body>
+<body onunload="spinner();">
 {% include "partials/header.html" %}
 {% block body %}{% endblock %}
 {% include "partials/footer.html" %}
