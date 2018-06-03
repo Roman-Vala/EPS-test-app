@@ -1,7 +1,7 @@
 {
-  "name": "broken-cherry",
+  "name": "EPS-test App",
   "version": "1.0.0",
-  "description": "My app description",
+  "description": "app description will follow later",
   "scripts": {
     "start": "node server.js"
   },
@@ -25,7 +25,7 @@
     "nunjucks": "^2.4.1",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
-    "pg": "^4.5.1"
+    "pg": "^4.5.7"
   },
   "devDependencies": {},
   "engines": {

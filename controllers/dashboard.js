@@ -61,7 +61,7 @@ exports.dashboardPost = function(req, res) {
     
 
     res.render('dashboard',{ch1:ch1,tmz:JSON.stringify(tmz),device:device} );
-    console.log(tmz);
+    // console.log(tmz);
   })
   .catch(error => {
     console.log(error);

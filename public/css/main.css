@@ -32,6 +32,15 @@ ul, ol {
   height:50px;
   
 }
+#spinnerDiv{
+  visibility: hidden;
+  position: absolute;
+  top:50%;
+  left:50%;
+}
+
+
+
 footer {
   position: absolute;
   width: 100%;

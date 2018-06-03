@@ -22,24 +22,30 @@
 
   {% if user.devices %}
   <h4>Your devices:</h4>
-  <form action="/dashboard" method="post">
+  <form action="/dashboard" method="post" onsubmit="spinner();">
   {% for item in user.devices.split(",") %}      
-      <input  type='submit' name = 'submit'    value = '{{ item }}'>       
+      <input  type='submit' name = 'submit'   value = '{{ item }}'>       
       {% endfor %}
   </form>
       {% else %}
         <li>Sorry there are no devices allocated</li>
         {% endif %}
-<canvas id="myChart"></canvas>
+
+  <div id="spinnerDiv">
+    <img alt="spinner" src="img/spinner.gif" height="64" width="64" />
+  </div>
+  <canvas id="myChart"></canvas>
 <script>
+  function spinner() {
+	document.getElementById('spinnerDiv').style.visibility = 'visible';
+	}
   let arr = [{{ch1}}]
   let timelabels = {{tmz|safe}}
-  console.log(arr)
+  // console.log(arr)
   var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
     type: 'line',
-
     // The data for our dataset
     data: {
         labels: timelabels,
